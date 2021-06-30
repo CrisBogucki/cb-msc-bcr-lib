@@ -1,5 +1,5 @@
 # cb-msc-bcr-lib
-Microservice Based Core with RabbitMQ Library
+Microservice Base netCore with RabbitMQ Library
 
 ### Base Configuration 
 ```json
