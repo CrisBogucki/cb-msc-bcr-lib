@@ -1,6 +1,6 @@
 using System;
 
-namespace CBMscBrcLib.Attribute
+namespace BaseAsyncServices.Attribute
 {
     [System.AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class Service : System.Attribute

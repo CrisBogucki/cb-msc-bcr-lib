@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using CBMscBrcLib.Attribute;
+using BaseAsyncServices.Attribute;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Exceptions;
 
-namespace CBMscBrcLib.ServiceBase
+namespace BaseAsyncServices.ServiceBase
 {
     public abstract class BaseAsyncBackgroundService : BackgroundService
     {

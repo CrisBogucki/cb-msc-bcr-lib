@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace CBMscBrcLib
+namespace BaseAsyncServices
 {
     public static class Tools
     {

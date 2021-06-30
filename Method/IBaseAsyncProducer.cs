@@ -1,6 +1,6 @@
-using CBMscBrcLib.Type;
+using Types;
 
-namespace CBMscBrcLib.Method
+namespace BaseAsyncServices.Method
 {
     public interface IBaseAsyncProducer
     {

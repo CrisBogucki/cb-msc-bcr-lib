@@ -1,4 +1,4 @@
-namespace CBMscBrcLib.Type
+namespace Types
 {
     public interface TRequest
     {

@@ -2,15 +2,15 @@ using System;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using CBMscBrcLib.Type;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using RabbitMQ.Client.Exceptions;
+using Types;
 using JsonException = System.Text.Json.JsonException;
 
-namespace CBMscBrcLib.ServiceBase
+namespace BaseAsyncServices.ServiceBase
 {
     public abstract class BaseAsyncService<TRequest> : BaseAsyncBackgroundService
     {

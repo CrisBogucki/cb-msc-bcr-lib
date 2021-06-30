@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Concurrent;
 using System.Text;
-using CBMscBrcLib.Type;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using Types;
 
-namespace CBMscBrcLib.Method
+namespace BaseAsyncServices.Method
 {
     public class BaseAsyncProducer : IBaseAsyncProducer
     {
