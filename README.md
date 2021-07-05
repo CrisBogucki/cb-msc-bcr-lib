@@ -4,7 +4,7 @@ Microservice Base netCore with RabbitMQ Library
 ### Base Configuration 
 ```json
 {
-  "service-conf": {
+  "service-conf": { 
     "name": "g-sample"
   },
   "rabbit": {
