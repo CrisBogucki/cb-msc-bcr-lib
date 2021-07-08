@@ -53,6 +53,9 @@ namespace BaseAsyncServices.ServiceBase
                     VirtualHost = Tools.GetAppSettingsValueString("rabbit", "vhost"),
                     DispatchConsumersAsync = true
                 };
+                
+                Console.WriteLine($"info: Host: {_connectionFactory.HostName}");
+                
             }
             catch (BrokerUnreachableException e)
             {
