@@ -20,8 +20,8 @@ namespace BaseAsyncServices.Method
                 UserName = Tools.GetAppSettingsValueString("rabbit", "user"),
                 Password = Tools.GetAppSettingsValueString("rabbit", "pass"),
                 HostName = Tools.GetAppSettingsValueString("rabbit", "host"),
+                Port = Protocols.DefaultProtocol.DefaultPort,
                 VirtualHost = Tools.GetAppSettingsValueString("rabbit", "vhost"),
-                
                 DispatchConsumersAsync = false
             };
             var connection = connectionFactory.CreateConnection();
