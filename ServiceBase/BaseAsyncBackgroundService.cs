@@ -49,6 +49,7 @@ namespace BaseAsyncServices.ServiceBase
                 {
                     UserName = Tools.GetAppSettingsValueString("rabbit", "user"),
                     Password = Tools.GetAppSettingsValueString("rabbit", "pass"),
+                    HostName = Tools.GetAppSettingsValueString("rabbit", "host"),
                     VirtualHost = Tools.GetAppSettingsValueString("rabbit", "vhost"),
                     DispatchConsumersAsync = true
                 };
