@@ -20,7 +20,6 @@ namespace BaseAsyncServices.Method
                 UserName = Tools.GetAppSettingsValueString("rabbit", "user"),
                 Password = Tools.GetAppSettingsValueString("rabbit", "pass"),
                 HostName = Tools.GetAppSettingsValueString("rabbit", "host"),
-                Port = 5672,
                 VirtualHost = Tools.GetAppSettingsValueString("rabbit", "vhost"),
                 
                 DispatchConsumersAsync = false
