@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using RabbitMQ.Client.Exceptions;
-using Types;
+using Messages;
 using JsonException = System.Text.Json.JsonException;
 
 namespace BaseAsyncServices.ServiceBase

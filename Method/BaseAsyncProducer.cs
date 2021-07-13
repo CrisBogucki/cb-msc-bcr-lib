@@ -4,7 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using Types;
+using Messages;
 
 namespace BaseAsyncServices.Method
 {

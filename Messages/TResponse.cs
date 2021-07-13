@@ -1,4 +1,4 @@
-namespace Types
+namespace Messages
 {
     public interface TResponse
     {
