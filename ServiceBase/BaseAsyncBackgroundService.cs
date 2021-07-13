@@ -81,8 +81,7 @@ namespace BaseAsyncServices.ServiceBase
             Channel.QueueDeclare(QueueName, false, false, true, args);
             
             Channel.BasicQos(0, 1, false);
-
-            Console.WriteLine($"info: Queue      : {QueueName}");
+            
             Console.WriteLine($"info: ---------------------------------------------");
             return base.StartAsync(cancellationToken);
         }
