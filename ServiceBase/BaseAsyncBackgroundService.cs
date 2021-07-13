@@ -77,7 +77,7 @@ namespace BaseAsyncServices.ServiceBase
                 {"x-message-ttl", 10000},
             };
             
-            QueueName = $"{_routingKey}";
+            QueueName = $"{_exchange}.{_routingKey}";
             Channel.QueueDeclare(QueueName, false, false, true, args);
             
             Channel.BasicQos(0, 1, false);
