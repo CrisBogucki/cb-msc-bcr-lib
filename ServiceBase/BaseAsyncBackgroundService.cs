@@ -72,11 +72,17 @@ namespace BaseAsyncServices.ServiceBase
 
             Channel.ExchangeDeclare(exchange: _exchange, type: "topic");
 
-            var args = new Dictionary<string, object> {{"x-message-ttl", 60000}};
-
-            QueueName = Channel.QueueDeclare().QueueName;
-            Channel.QueueBind(queue: QueueName, exchange: _exchange, routingKey: _routingKey, args);
-
+            var args = new Dictionary<string, object>
+            {
+                {"x-message-ttl", 60000},
+                // {"auto_delete", true},
+                // {"durable", true},
+                // {"exclusive", true}
+            };
+            
+            QueueName = $"{_routingKey}";
+            Channel.QueueDeclare(QueueName, true, true, true, args);
+            
             Channel.BasicQos(0, 1, false);
 
             Console.WriteLine($"info: Queue      : {QueueName}");
