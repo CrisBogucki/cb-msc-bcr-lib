@@ -74,14 +74,11 @@ namespace BaseAsyncServices.ServiceBase
 
             var args = new Dictionary<string, object>
             {
-                {"x-message-ttl", 60000},
-                // {"auto_delete", true},
-                // {"durable", true},
-                // {"exclusive", true}
+                {"x-message-ttl", 10000},
             };
             
             QueueName = $"{_routingKey}";
-            Channel.QueueDeclare(QueueName, true, true, true, args);
+            Channel.QueueDeclare(QueueName, false, false, true, args);
             
             Channel.BasicQos(0, 1, false);
 
